@@ -1,31 +1,42 @@
-body {
-    color: #414141;              
-    background-color: #EEEEEE;   
+*{
+  background-color: #EEEEEE;  
+  color: #5D6063;  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none; 
 }
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Helvetica", "Arial", sans-serif;
-    font-weight: normal;    
+ 
+.outline-layout{ 
+   
+    padding: 20px 50px 20px 100px;
+    /*Padding: top, right, bottom, left*/
+    border-bottom: 1px solid #5D6063;
+    border-radius: 5px; 
+    
   }
-  h1 {
-    font-size: 2em;
+  .inline-layout *{
+   
+    font-family: "Open Sans","Arial", "Helvetica", sans-serif;
+    display: inline;
   }
-  h2 {
-    font-size: 1.6em;
+  .title{
+    font-size: 25px;
+    padding-inline-end: 5px; 
+
   }
 
-  ul {
-    list-style-type: circle;
-  }
+  .main-menu *{
+    font-size: 15px;
+    padding-inline: 10px;
+ 
+
   
-  ol {
-    list-style-type: none;
   }
-  a {
-    text-decoration: none;
+
+
+  body {
+
+    font-family: "Open Sans","Arial", "Helvetica", sans-serif; 
   }
-summary{
-    font-size: 1.5em;
-    font-family: "Helvetica", "Arial", sans-serif;
-    font-weight: normal;   
-    text-decoration: none; 
-}
+ 
