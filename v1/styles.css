@@ -1,0 +1,61 @@
+*{
+  background-color: #EEEEEE;  
+  color: #5D6063;  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none; 
+  font-family: "Open Sans","Arial", "Helvetica", sans-serif; 
+}
+ 
+.outline-layout{ 
+   
+    padding: 20px 50px 20px 100px;
+    /*Padding: top, right, bottom, left*/
+    border-bottom: 1px solid #5D6063;
+    border-radius: 5px; 
+    
+  }
+  .inline-layout *{
+   
+    display: inline;
+  }
+  .title{
+    font-size: 25px;
+    padding-inline-end: 5px; 
+
+  }
+  .main-menu *{
+    font-size: 15px;
+    padding-inline: 10px;
+  
+  }
+.main-section{
+  padding-left: 100px;
+  padding-right: 1000px;
+  line-height: 1.8;
+
+ 
+}
+.section-title{
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+}
+.peps-images{
+  width: 300px;
+
+}
+
+.look-a-like{
+  height: 400px;
+
+}
+.fc-fp-logo{
+  width: 200px;
+  float:inline-end;
+  
+}
+.korg-bild{
+  width: 500px;
+}

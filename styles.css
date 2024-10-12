@@ -1,61 +1,271 @@
-*{
-  background-color: #EEEEEE;  
-  color: #5D6063;  
+* {
+  background-color: #fff4ed;
+  color:rgb(132, 0, 255);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none; 
-  font-family: "Open Sans","Arial", "Helvetica", sans-serif; 
-}
- 
-.outline-layout{ 
-   
-    padding: 20px 50px 20px 100px;
-    /*Padding: top, right, bottom, left*/
-    border-bottom: 1px solid #5D6063;
-    border-radius: 5px; 
-    
-  }
-  .inline-layout *{
-   
-    display: inline;
-  }
-  .title{
-    font-size: 25px;
-    padding-inline-end: 5px; 
+  text-decoration: none;
 
-  }
-  .main-menu *{
-    font-size: 15px;
-    padding-inline: 10px;
+}
+
+.menu-header {
+  background-image: url(background/menu-board-neon.svg);
+  background-repeat: repeat-x;
+ background-size:cover;
+  background-position: center;
+  padding: 25px 0;
+  display: flex;
+  border-radius: 3px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.menu {
+  border: 4px solid rgb(132, 0, 255);
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  flex: auto;
+  background-color: transparent;
+
+}
+
+
+.links{
+  display: flex;
+  flex:auto;
+  text-wrap: nowrap;
+  background-color: transparent;
   
-  }
-.main-section{
-  padding-left: 100px;
-  padding-right: 1000px;
-  line-height: 1.8;
+
+
+
+}
+
+/*  display: flex;
+    justify-content: left;
+    background-image: url("logo.png");
+    background-position: left;
+    background-size: cover;
+  */
+
+.home-page{
+
+
+  font-size: 25px;
+  border: 4px solid rgb(255, 153, 0);
+
+ background-color:  rgb(255, 196, 0);
+  border-style: double;
+  border-radius: 3px;
+  display: flex;
+  margin-left: 100px;
+
+  align-items: flex-end;
 
  
-}
-.section-title{
-  padding-top: 50px;
-  padding-bottom: 50px;
+
 
 }
-.peps-images{
+
+.link1{
+  display: flex;
+  font-size: 18px;
+  border: 4px solid rgb(0, 221, 255);
+  border-style: double;
+  background-color: rgb(9, 255, 0);
+  border-radius: 3px;
+  align-items: flex-end;
+  margin-left: 450px;
+  
+}
+.link2{
+
+  display: flex;
+
+  font-size: 18px;
+  border: 4px solid rgb(255, 119, 0);
+  border-style: double;
+  background-color: red;
+  border-radius: 3px;
+  align-items: flex-end;
+
+
+}
+.link3{
+  display: flex;
+ 
+  font-size: 18px;
+  border: 4px solid rgb(0, 221, 255);
+  border-style: double;
+  background-color: blue;
+  border-radius: 3px;
+  align-items: flex-end;
+}
+.link4{
+  display: flex;
+ 
+  font-size: 18px;
+  border: 4px solid rgb(0, 221, 255);
+  border-style: double;
+  background-color: blue;
+  border-radius: 3px;
+  align-items: flex-end;
+
+}
+
+.home, .intressen, .tekniska-färdigheter,.övrigt-om-mig, .WEB-UX-vecka1{
+  padding-left: 5px;
+  padding-right: 5px;
+  
+}
+
+.link2,
+.link3, .link4 {
+  margin-left: 20px;
+ 
+  
+  
+}
+
+.active {
+  text-decoration: underline;
+ 
+}
+
+a:hover {
+  color: yellow;
+  
+}
+
+.bread-container {
+  
+  border: 2px solid blue;
+  display: flex;
+  
+  justify-content: space-around;
+  border-radius: 3px;
+  background-color: transparent;
+
+  justify-items: center;
+
+
+}
+.bread-content{
+  
+  border: 2px solid gold;
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  width: 800px;
+}
+
+.bread-item {
+  border: 3px solid red;
+  padding: 60px;
+
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.bread-head {
+  display: flex;
+  justify-content: right;
+  padding-bottom: 15px;
+}
+.side-board-container{
+
+  border: 3px solid rgb(0, 170, 255);
+  
+  display: flex;
+
+  justify-content: center;
+
+
+}
+.side-board{
+  border: 3px solid rgb(238, 0, 255);
+  background-image: url(background/flipped-menu-board-neon.svg);
+  display: flex;
+  background-repeat: repeat-y;
+
+  background-size:cover;
+  width: 120px;
+
+  background-position: center;
+  
+
+
+}
+.photo-container{
+
+  display: flex;
+  background: radial-gradient(circle, black, white);
+  
+
+
+
+}
+.image-1{
+  display: flex;
+  
+  justify-content: center;
+
+  width: 300px;
+  height: 300px;
+  flex-direction: column;
+}
+figcaption{
+  border: 2px solid green;
+  display: flex;
+
+  
+
+}
+
+.side-photo-container {
+  border: 2px solid green;
+  display: flex;
+  /*flex-direction: row;*/
+  justify-content: center;
+  width: 400px;
+ 
+
+}
+
+.side-photo-item {
+  width: 300px;
+  display: flex;
+  justify-self: center;
+
+}
+
+main {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+.photo-container {
+  border: 2px solid blue;
+  display: flex;
+ /* flex-direction: row;*/
+  justify-content: center;
+}
+
+.photo-head {
+
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /*flex-direction: row;*/
+  align-items: center;
+}
+
+.photo-item {
+
   width: 300px;
 
-}
 
-.look-a-like{
-  height: 400px;
-
-}
-.fc-fp-logo{
-  width: 200px;
-  float:inline-end;
-  
-}
-.korg-bild{
-  width: 500px;
 }
