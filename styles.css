@@ -81,7 +81,6 @@ html {
 .menu-title{
     display: flex;
     list-style: none;
-   
     font-size:var(--font-size-2);
     justify-content: center;
     align-items: center;
