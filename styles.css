@@ -54,8 +54,6 @@ html {
 
     display: flex;   
     flex-direction: row;
-      /* padding: 3vh 3vh;
-    justify-content:center; logon hoppar med denna*/
     width: 200px;
     height: 100px;
     justify-content: space-between;
@@ -83,14 +81,14 @@ html {
 .menu-title{
     display: flex;
     list-style: none;
-
+   
     font-size:var(--font-size-2);
     justify-content: center;
     align-items: center;
     font-weight: 400;
     width: 100px;
     height: 100px;
-    /*overflow: hidden;*/
+
     background-color: transparent;
     transition: all .40s ease;
     -webkit-transition: all .40s ease;
@@ -104,16 +102,16 @@ html {
   }
 
 .menu-container:hover, .drop-list {
-    
-    display: flex;
 
+    display: flex;
+    list-style: none;
     width: 250px;
     height: 300px;
     cursor: pointer;
     flex-direction: column;
     border: 3px solid var(--dark-purple); 
     border-radius:10px;
-
+    color:var(--light-pink);
     background-color:var(--purple);
     transition: all .40s ease;
     -webkit-transition: all .40s ease;
@@ -121,12 +119,12 @@ html {
 
 
 .drop-list {
-    display: none;
-   
-    list-style: none;
+
+ 
+    
     flex-direction: column;
     border: 3px solid var(--dark-purple); 
-    
+    color:var(--light-pink);
     border-radius:10px;
     justify-content: space-around; 
     margin-inline-start: 25px;
@@ -137,20 +135,23 @@ html {
     -webkit-transition: all .40s ease;
 }
 
-.drop-list>li>a {
+.drop-list{
+  display: none;
     flex-direction: column;
     color:var(--light-pink);
     margin-bottom: 20px;
 
     text-decoration: none;
-
- 
+}
+.drop-list>li>a{
+  text-decoration: none;
+  color:var(--light-pink);
 }
 .front-page{
     display: flex;
      position: absolute; /*för att den skulle sluta röra sif när man öppnar menyn*/
      top:400px;
-      border:2px solid salmon;
+
       flex-direction: column;
       text-align: center;
       align-self: center;

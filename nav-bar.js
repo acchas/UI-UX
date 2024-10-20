@@ -1,29 +1,30 @@
 let dropDownBtn = document.getElementById("menuContainer");
 let dropDownList = document.getElementById("dropList");
+let menuTitle = document.getElementById("menuTitle");
+let menuLogo=document.getElementById("menuLogo");
 
 
-dropDownBtn.addEventListener("mouseover",showMenu);
+dropDownBtn.addEventListener("mouseenter", showMenu);
 dropDownBtn.addEventListener("mouseleave", hideMenu);
-/*dropDownBtn.addEventListener("click", goHome);*/
-dropDownBtn.addEventListener("touchmove", showMenu);
-dropDownBtn.addEventListener("touchmove", hideMenu);
 
-/*Kanske sättta en timer på att menyn försvinner? */
-
-function showMenu(){
-  dropDownList.style.display="flex";
+dropDownBtn.addEventListener("touchstart", showMenu);
 
 
-}
-function hideMenu(){
-  dropDownList.style.display="none";
+
+function showMenu() {
+
+    dropDownList.style.display = "flex";
+
+    menuTitle.style.display = "none";
 
 }
+function hideMenu() {
+    dropDownList.style.display = "none";
+    menuTitle.style.display = "flex";
+}
+function goHome() {
 
+    location.href = "index.html";
 
-function goHome(){
-
-  location.href="index.html";
-  
 }
 
