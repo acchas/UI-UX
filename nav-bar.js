@@ -8,9 +8,6 @@ dropDownBtn.addEventListener("mouseenter", showMenu);
 dropDownBtn.addEventListener("mouseleave", hideMenu);
 
 
-dropDownBtn.addEventListener("touchstart", showMenu);
-dropDownBtn.addEventListener("touchstart", hideMenu);
-
 
 function showMenu() {
 

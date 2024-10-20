@@ -118,8 +118,6 @@ html {
 
 
 .drop-list {
-
- 
     
     flex-direction: column;
     border: 3px solid var(--dark-purple); 
