@@ -4,9 +4,17 @@
     box-sizing: border-box;
     
 }
+:root {
+    --light-pink: #fff4ed;
+    --dark-purple:rgb(89, 0, 255);
+    --purple:rgb(157, 0, 255);
+    --font-size-1: 40px;
+    --font-size-2: 30px;
+    --font-size-3: 25px;
+    --font-size-3:20px;
+    --fons-size-4:14px;
 
-
-
+}
 
 .row::after {
     content: "";
@@ -24,17 +32,6 @@ html {
     background-color: var(--light-pink);
     
     
-}
-:root {
-    --light-pink: #fff4ed;
-    --dark-purple:rgb(89, 0, 255);
-    --purple:rgb(157, 0, 255);
-    --font-size-1: 40px;
-    --font-size-2: 30px;
-    --font-size-3: 25px;
-    --font-size-3:20px;
-    --fons-size-4:14px;
-
 }
 
 .first-page {
@@ -285,11 +282,27 @@ img {
 .box-12 {
     width: 100%;
 }
+/* For mobile phones: */
+/* @media only screen and (max-width: 768px) {
 
-@media only screen and (max-width: 768px) {
-
-    /* For mobile phones: */
+    
     [class*="box-"] {
         width: 100%;
     }
-}
+}*/
+   /*Portrait */
+@media only screen and (max-aspect-ratio: 1/1) {
+  
+  }
+@media all and (orientation: landscape) {
+    /* CSS code for output in landscape mode */
+    }
+
+@media all and (orientation: portrait) {
+    /* CSS code for output in portrait mode */
+
+      /* For mobile phones: */
+      [class*="box-"] {
+        width: 100%;
+    }
+    }
